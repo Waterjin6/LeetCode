@@ -41,11 +41,6 @@ public:
         inputChart(root, 1);
         int ansLev = levelChart[0].first;
         int maxSum = levelChart[0].second;
-        
-         for(int i = 0; i < levelChart.size(); i++){
-            cout << levelChart[i].first<< " "<< levelChart[i].second<<endl;
-
-        }
 
         for(int i = 1; i < levelChart.size(); i++){
             if ((levelChart[i].second > maxSum)||((levelChart[i].second == maxSum)&&(levelChart[i].first < ansLev))){
