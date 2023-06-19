@@ -9,10 +9,6 @@ public:
             alti.push_back(alti[i] + gain[i]);
         }
         
-        for(int i = 0; i <= gain.size(); i++){
-            cout << alti[i] << " ";
-        }
-        
         for(int i = 0; i < alti.size(); i++){
             if(max < alti[i]) max = alti[i];
         }
