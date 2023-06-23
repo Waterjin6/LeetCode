@@ -15,12 +15,11 @@ public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         ListNode* answer;
         ListNode* answerHead;
-        ListNode* p;
         
         if(list1 == NULL) return list2;
         if(list2 == NULL) return list1;
         
-        if(list1->val < list2->val){
+        if(list1->val < list2->val){ // make head
             answer = new ListNode(list1->val);
             list1 = list1->next;
         }
@@ -31,7 +30,7 @@ public:
         
         answerHead = answer;
         
-        while((list1 != NULL)&&(list2 != NULL)){
+        while((list1 != NULL)&&(list2 != NULL)){ // make chain
             if(list1->val < list2->val){
                 ListNode * newNode;
                 newNode = new ListNode(list1->val);
@@ -40,12 +39,10 @@ public:
                 list1 = list1->next;
             }
             else{
-                cout << "case2";
                 ListNode * newNode;
                 newNode = new ListNode(list2->val);
                 answer->next = newNode;
                 answer = answer->next;
-                cout << "\nanswer->val : "<< answer->val<<"\n";
                 list2 = list2->next;
             }
         }
