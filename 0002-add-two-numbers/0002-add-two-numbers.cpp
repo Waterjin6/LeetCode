@@ -12,29 +12,9 @@ class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         int u = 0;
-        int ans;
         ListNode* lans;
-        ListNode* nxt;
         ListNode* lansHead;
         
-        /*
-        // 3. int to ListNode
-        lans = new ListNode();
-        lans->val = ( u + (l1->val + l2->val)) % 10;
-        u = ( u + (l1->val + l2->val)) / 10;
-        lansHead = lans;
-        cout << lans->val;
-        
-        while(l1 && l2){
-            nxt = new ListNode();
-            lans->next = nxt;
-            lans = lans->next;
-            lans->val = ( u + (l1->val + l2->val)) % 10;
-            u = ( u + (l1->val + l2->val)) / 10;
-            lans = lans->next;
-        }
-        */
-        // 3. int to ListNode
         lans = new ListNode();
         lans->val = ( u + (l1->val + l2->val)) % 10;
         u = ( u + (l1->val + l2->val)) / 10;
