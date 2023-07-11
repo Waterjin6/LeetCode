@@ -36,13 +36,10 @@ public:
     }
     
     vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
-        int t = k;
         
         // 1. make pair for all of matches
         makePair(root);
-        
-        //for(int i = 0; i < pr.size(); i++)cout << pr[i].first << pr[i].second << endl;
-        
+
         // 2. find distance by while
         findNeighbor(target->val, k, 501);
         
