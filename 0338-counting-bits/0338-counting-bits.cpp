@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> countBits(int n) {
         vector<int> ans;
-        int count = 0;
+        int count;
         
         for(int i = 0; i <= n; i++){
             count = 0;
