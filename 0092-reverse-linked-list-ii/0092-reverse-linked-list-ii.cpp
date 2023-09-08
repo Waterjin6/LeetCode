@@ -52,10 +52,7 @@ public:
             }
         }
         
-        if(before){
-            before->next = pHead;
-            //pHead = head;
-        }
+        if(before) before->next = pHead; // link lists
         else head = pHead;
         if(after)last->next = after;
         
