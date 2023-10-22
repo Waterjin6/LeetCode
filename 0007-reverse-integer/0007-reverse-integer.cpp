@@ -11,6 +11,7 @@ public:
             x *= -1;
         }
         
+        
         string s = to_string(x);
         
         std::reverse(s.begin(),s.end());
@@ -20,7 +21,7 @@ public:
         }
         
         if(s.size() == 0)return 0;
-        //if(s.length() > 10)return 0;
+        if(s.length() > 10)return 0;
         if((s.length() == 10)&&(s > to_string(pow(2,31)-1)))return 0;
         
         ans += s;
