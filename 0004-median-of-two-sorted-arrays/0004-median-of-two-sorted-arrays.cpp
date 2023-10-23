@@ -16,22 +16,19 @@ public:
         
         double ans = 0;
         int idx1 = 0, idx2 = 0;
-        //cout<<"midIdx : "<<midIdx<<endl;
+
         for(int i = 0; i < midIdx; i++){
             if(idx2 == sz2)idx1++;
             else if(idx1 == sz1)idx2++;
             else if(nums1[idx1] < nums2[idx2]) idx1++;
             else idx2++;
         }
-        //cout<<"idx1 : "<<idx1<<", idx2 : "<<idx2<<endl;
+
         for(int i = 1; i <= midSize; i++){
             if(idx2 == sz2)ans += nums1[idx1++];
             else if(idx1 == sz1)ans += nums2[idx2++];
             else if(nums1[idx1] < nums2[idx2]) ans += nums1[idx1++];
-            else {
-                ans += nums2[idx2++];
-            }
-           // cout<<"ans : "<<ans<<endl;
+            else ans += nums2[idx2++];
         }
         
         return ans/midSize;
