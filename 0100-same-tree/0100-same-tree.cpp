@@ -28,18 +28,11 @@ public:
             pq.pop();
             qq.pop();
             
-            if(pc->val != qc->val){
-                cout<< "not same"<<endl;
-                return false;
-            }
-            if((pc->left == NULL)^(qc->left == NULL)){
-                cout<< "leftchild diff"<<endl;
-                return false;
-            }
-            if(((pc->right) == NULL)^((qc->right) == NULL)){
-                cout<< "right child diff"<<endl;
-                return false;
-            }
+            if(pc->val != qc->val) return false;
+            
+            if((pc->left == NULL)^(qc->left == NULL)) return false;
+
+            if(((pc->right) == NULL)^((qc->right) == NULL)) return false;
             
             if(pc->left)pq.push(pc->left);
             if(pc->right)pq.push(pc->right);
@@ -47,10 +40,8 @@ public:
             if(qc->left)qq.push(qc->left);
             if(qc->right)qq.push(qc->right);
         }
-        if((pq.empty()==false)||(qq.empty()==false)){
-            cout<< "not empty"<<endl;
-            return false;
-        }
+        if((pq.empty()==false)||(qq.empty()==false)) return false;
+        
         return true;
     }
 };
