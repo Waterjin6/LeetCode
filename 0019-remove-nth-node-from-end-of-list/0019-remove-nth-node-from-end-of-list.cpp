@@ -18,7 +18,6 @@ public:
         if(listSize == 1)return nullptr;
         
         int idx = listSize - n;
-        cout<< idx <<endl;
         
         //remove idx node
         if(idx == 0)return head->next;
