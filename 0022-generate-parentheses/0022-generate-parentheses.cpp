@@ -8,12 +8,9 @@ public:
             return;
         }
         
-        if(a > 0){
-            makeString(a-1, b, s + "(");
-        }
-        if((b > 0)&&(a < b)){
-            makeString(a, b-1, s+ ")");
-        }
+        if(a > 0) makeString(a-1, b, s + "(");
+        
+        if((b > 0)&&(a < b)) makeString(a, b-1, s+ ")");
         
         return;
     }
