@@ -3,10 +3,7 @@ public:
     vector<string> ans;
     
     void makeString(int a, int b, string s){
-        if((a == 0)&&(b== 0)){
-            ans.push_back(s);
-            return;
-        }
+        if((a == 0)&&(b== 0)) ans.push_back(s);
         
         if(a > 0) makeString(a-1, b, s + "(");
         
