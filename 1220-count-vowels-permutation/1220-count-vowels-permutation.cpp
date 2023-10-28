@@ -32,14 +32,11 @@ public:
     int countVowelPermutation(int n) {
         if(n == 1)return 5;
         
-        for(int i = 1; i < n; i++){
-            work();
-        }
+        for(int i = 1; i < n; i++) work();
         
         int answer = 0;
-        for(int i = 0; i < 5; i++){
-            answer = modulo(ans[i] + answer);
-        }
+        for(int i = 0; i < 5; i++) answer = modulo(ans[i] + answer);
+        
         return answer;
     }
 };
