@@ -24,16 +24,9 @@ public:
         sort(candidates.begin(), candidates.end());
         this->candidates = candidates;
         
-        for(int i = 0; i < candidates.size(); i++){
-            cout<<candidates[i]<<" ";
-        }
-        cout<<endl;
-        
         for(int i = 0; (i < candidates.size()&&(candidates[i] <= target)); i++){
             vector<int> v = {candidates[i]};
             work(i, v ,candidates[i]);
-            //cout<<"done i : "<<i<<endl;
-            
         }
  
         return ans;
