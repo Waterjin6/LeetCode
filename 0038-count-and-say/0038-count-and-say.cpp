@@ -15,7 +15,7 @@ public:
             cnt = 0;
             if(i < ans.length())f = ans[i];
         }
-        //cout<<"str : "<<str<<endl ;   
+
         ans = str;
         return;
     }
@@ -28,7 +28,7 @@ public:
         for(int i = 2; i <= n; i++){ // n times
             sayWord(ans);
         }
-        //cout<< ans<<endl;
+
         return ans;
     }
 };
