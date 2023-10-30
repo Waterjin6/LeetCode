@@ -11,12 +11,6 @@ public:
             ans.push_back(vec);
             return;
         }
-        /*
-        for(int i; i < vec.size(); i++){
-            cout<< vec[i]<<" ";
-        }
-        cout<<endl;
-        */
         
         if(startIdx > need)return;
         
@@ -36,9 +30,7 @@ public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         this->target = target; 
   
-        for(int i = 0; i < candidates.size(); i++){
-            cnt[candidates[i]]++;
-        }
+        for(int i = 0; i < candidates.size(); i++) cnt[candidates[i]]++;
         
         vector<int> v;
         work(target, 1 , v);
