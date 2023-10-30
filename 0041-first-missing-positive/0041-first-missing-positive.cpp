@@ -13,11 +13,11 @@ public:
         nums.erase(unique(nums.begin(),nums.end()), nums.end());
         
         int firstPlus = findIdx(nums);
-        //cout<< firstPlus<<endl;
+
         if(firstPlus == -1)return 1;
         
         int n=1;
-        //cout<< nums[firstPlus];
+
         while((firstPlus < nums.size())&&(n == nums[firstPlus])){
             firstPlus++;
             n++;
