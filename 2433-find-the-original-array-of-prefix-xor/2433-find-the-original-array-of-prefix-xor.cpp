@@ -21,7 +21,6 @@ public:
         
         for(int i = 0; i < n.length(); i++){
             x += (n[i]-'0')*pow(2, n.length()-1-i);
-            //cout<< "x : "<<x<<endl;
         }
         
         return x;
@@ -30,30 +29,20 @@ public:
     
     int getNext(int bef,int res){
         string n = "";
-        //cout<< "bef : "<<bef<<endl;
-        //cout<< "res : "<<res<<endl;
+
         string befS = getBin(bef);
         string resS = getBin(res);
-        //cout<< "befS : "<<befS<<endl;
-        //cout<< "res : "<<res<<endl;
-        //cout<< "resS : "<<resS<<endl;
+
         int length = (befS.length() > resS.length()) ? befS.length() : resS.length();
         
         if(length > resS.length())resS.insert(0,length-resS.length(),'0');
         else if(length > befS.length())befS.insert(0, length-befS.length(),'0');
-        
-        //cout<< "befS : "<<befS<<endl;
-        //cout<< "res : "<<res<<endl;
-        //cout<< "resS : "<<resS<<endl;
-        
-        //cout<< "l : "<<length<<endl;
+
         for(int i = 0; i < length; i++){
             n.append(to_string((befS[i] - '0')^(resS[i]-'0')));
         }
-        //cout<< n<<endl;
+
         int nInt = getInt(n);
-        //cout<< "nInt: "<<nInt<<endl;
-        //cout<<endl;
         
         return nInt;
     }
