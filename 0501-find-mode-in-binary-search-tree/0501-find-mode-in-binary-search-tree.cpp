@@ -35,9 +35,9 @@ public:
         while(!q.empty()){
             TreeNode* n = q.front();
             q.pop();
-            
-            if(cnt.find(n->val) != cnt.end()) cnt[n->val]++;
-            else cnt.insert({n->val, 1});
+            cnt[n->val]++;
+            //if(cnt.find(n->val) != cnt.end()) cnt[n->val]++;
+            //else cnt.insert({n->val, 1});
             
             if(n->left)q.push(n->left);
             if(n->right)q.push(n->right);
