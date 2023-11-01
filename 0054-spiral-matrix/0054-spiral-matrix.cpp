@@ -14,18 +14,15 @@ public:
     
     
     void changeDir(int &wid, int &hei, int &x, int &y, int &d, int &dw, int &dh){
-        //cout<<"wid : "<<wid <<endl;
         if (d % 2 == 0)dw++;
         else if (d % 2 == 1)dh++;
         
         if((dw == wid)){
-            //cout<<"x : "<<x <<", y : "<< y<<endl;
             d = (d+1)%4;
             wid--;
             dh = 0;
         }
         else if((matrix.size() != 1)&&(dh == hei)){
-            //cout<<"change hei dh : "<<dh <<" hei"<<hei<<" size : "<<matrix.size()<<endl;
             d = (d+1)%4;
             hei--;
             dw = 0;
@@ -33,7 +30,7 @@ public:
         
         x += dx[d];
         y += dy[d];
-        //cout<<"x : "<<x <<", y : "<< y<< ", matrix : "<<matrix[x][y]<<endl;
+        
         return;
     }
     
