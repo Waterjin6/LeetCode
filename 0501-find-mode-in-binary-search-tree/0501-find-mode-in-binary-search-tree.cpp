@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    map<int,int> cnt;
+    unordered_map<int,int> cnt;
     
     vector<int> ans;
     
@@ -36,23 +36,12 @@ public:
             TreeNode* n = q.front();
             q.pop();
             
-            //cout<< n->val <<endl;
-            if(cnt.find(n->val) != cnt.end()){
-                //cout<< "find "<<n->val <<endl;
-                cnt[n->val]++;
-            }
-            else {
-                //cout<< "cant find "<<n->val <<endl;
-                cnt.insert({n->val, 1});
-            }
+            if(cnt.find(n->val) != cnt.end()) cnt[n->val]++;
+            else cnt.insert({n->val, 1});
             
             if(n->left)q.push(n->left);
             if(n->right)q.push(n->right);
         }
-        
-        /*for(auto i = cnt.begin(); i != cnt.end(); i++){
-            cout<< i->first << ", " << i->second << endl;
-        }*/
         
         int largest = findLargest();
         
