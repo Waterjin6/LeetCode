@@ -1,21 +1,18 @@
 class Solution {
 public:
     vector<vector<string>> ans;
-    int dx[4] = {-1,-1};
-    int dy[4] = {-1,1};
-    
-    bool inRange(int x, int y, int sz){
-        return x >= 0 && y >= 0 && x < sz && y < sz;
-    }
     
     bool isPossible(int x, int y, vector<string> v){
         for(int i = 0; i < v.size(); i++){
             if(v[i][y] == 'Q')return false;
         }
-        for(int t = 0; t < 2; t++){
-            for(int i = 0; inRange(x+dx[t]*i, y+dy[t]*i, v.size()) == true; i++){
-                if(v[x+dx[t]*i][y+dy[t]*i]== 'Q')return false;
-            }
+        
+        for(int i = 1; (x-i >=0) && (y-i>=0); i++){
+            if(v[x-i][y-i]== 'Q')return false;
+        }
+        
+        for(int i = 1; x-i >=0 && y+i < v.size(); i++){
+            if(v[x-i][y+i]== 'Q')return false;
         }
         
         return true;
