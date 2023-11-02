@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<vector<string>> ans;
-    int dx[4] = {-1,-1,1,1};
-    int dy[4] = {-1,1,-1,1};
+    int dx[4] = {-1,-1};
+    int dy[4] = {-1,1};
     
     bool inRange(int x, int y, int sz){
         return x >= 0 && y >= 0 && x < sz && y < sz;
@@ -12,7 +12,7 @@ public:
         for(int i = 0; i < v.size(); i++){
             if(v[i][y] == 'Q')return false;
         }
-        for(int t = 0; t < 4; t++){
+        for(int t = 0; t < 2; t++){
             for(int i = 0; inRange(x+dx[t]*i, y+dy[t]*i, v.size()) == true; i++){
                 if(v[x+dx[t]*i][y+dy[t]*i]== 'Q')return false;
             }
