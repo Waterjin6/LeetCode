@@ -40,7 +40,11 @@ public:
         
         q.push(root);
         
-        while(!q.empty()){
+        for(auto i = sumT.begin(); i != sumT.end(); i++){
+            TreeNode* n = i->first;
+            if((childN[n] != 0)&&(sumT[n]/childN[n] == n->val)) ans++;
+        }
+        /*while(!q.empty()){
             TreeNode* n = q.front();
             q.pop();
             
@@ -50,7 +54,7 @@ public:
 
             //cout<< sumT[n]/childN[n] << " "<< n->val <<endl;
             if(sumT[n]/childN[n] == n->val)ans++;
-        }
+        }*/
         
         return ans;
     }
