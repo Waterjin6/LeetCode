@@ -36,25 +36,11 @@ public:
     int averageOfSubtree(TreeNode* root) {
         setSum(root);
         int ans = 0;
-        queue<TreeNode*> q;
-        
-        q.push(root);
         
         for(auto i = sumT.begin(); i != sumT.end(); i++){
             TreeNode* n = i->first;
             if((childN[n] != 0)&&(sumT[n]/childN[n] == n->val)) ans++;
         }
-        /*while(!q.empty()){
-            TreeNode* n = q.front();
-            q.pop();
-            
-            int cnt = 1;
-            if(n->left)q.push(n->left);
-            if(n->right)q.push(n->right);
-
-            //cout<< sumT[n]/childN[n] << " "<< n->val <<endl;
-            if(sumT[n]/childN[n] == n->val)ans++;
-        }*/
         
         return ans;
     }
