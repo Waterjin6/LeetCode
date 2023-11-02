@@ -11,37 +11,24 @@
  */
 class Solution {
 public:
-    unordered_map<TreeNode*, int> sumT;
-    unordered_map<TreeNode*, int> childN;
+    int count = 0;
     
-    void setSum(TreeNode* t){
-        if(t == nullptr)return;
+    pair<int, int> postOrder(TreeNode* root) {
+        if (root == NULL) return {0, 0};
         
-        childN[t] = 1;
+        pair<int, int> left = postOrder(root->left);
+        pair<int, int> right = postOrder(root->right);
         
-        if(t->left) {
-            setSum(t->left);
-            childN[t] += childN[t->left];
-        }
-        if(t->right) {
-            setSum(t->right);
-            childN[t] += childN[t->right];
-        }
-        
-        sumT[t] = sumT[t->left] + sumT[t->right] + t->val;
-        
-        return;
+        int nodeSum = left.first + right.first + root->val;
+        int nodeCount = left.second + right.second + 1;
+
+        if (root->val == nodeSum / (nodeCount)) count++;
+    
+        return {nodeSum, nodeCount};
     }
     
     int averageOfSubtree(TreeNode* root) {
-        setSum(root);
-        int ans = 0;
-        
-        for(auto i = sumT.begin(); i != sumT.end(); i++){
-            TreeNode* n = i->first;
-            if((childN[n] != 0)&&(sumT[n]/childN[n] == n->val)) ans++;
-        }
-        
-        return ans;
+        postOrder(root);
+        return count;
     }
 };
