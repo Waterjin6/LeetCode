@@ -22,11 +22,6 @@ public:
     
     void putQueen(int queenCnt, int x, int totalQ, vector<string> &v, bool isVisitedY[])
     {
-        //cout<<"queen Cnt : "<<queenCnt<<endl;
-        /*for(int i = 0; i < totalQ; i++){
-            cout<< v[i]<<endl;
-        }
-        cout<<endl;*/
         if(queenCnt == totalQ){
             ans.push_back(v);
             return;
@@ -34,9 +29,8 @@ public:
         if(x >= totalQ)return;
         
         for(; x < totalQ; x++){
-            //cout<<"x : "<<x<<endl;
             for(int y = 0; y < totalQ; y++){
-                //cout<< x <<" "<< y << " "<<endl;
+
                 if((isVisitedY[y] == 0)&&(isPossible(x,y,v))){
                     v[x][y] = 'Q';
                     isVisitedY[y] = 1;
@@ -54,9 +48,6 @@ public:
         string s(n,'.');
         vector<string> v(n,s);
 
-        /*for(int i = 0; i < n; i++){
-            cout<< v[i]<<endl;
-        }*/
         bool visited[9] = {0,};
         putQueen(0,0,n,v, visited);
         
