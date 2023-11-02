@@ -1,3 +1,35 @@
+//class Solution {
+//private:
+    /*void solveNQueens(std::vector<std::vector<std::string> > &res, std::vector<std::string> &nQueens, int row, int &n) {
+        if (row == n) {
+            res.push_back(nQueens);
+            return;
+        }
+        for (int col = 0; col != n; ++col)
+            if (isValid(nQueens, row, col, n)) {
+                nQueens[row][col] = 'Q';
+                solveNQueens(res, nQueens, row + 1, n);
+                nQueens[row][col] = '.';
+            }
+    }
+    bool isValid(std::vector<std::string> &nQueens, int row, int col, int &n) {
+        //check if the column had a queen before.
+        for (int i = 0; i != row; ++i)
+            if (nQueens[i][col] == 'Q')
+                return false;
+        //check if the 45° diagonal had a queen before.
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; --i, --j)
+            if (nQueens[i][j] == 'Q')
+                return false;
+        //check if the 135° diagonal had a queen before.
+        for (int i = row - 1, j = col + 1; i >= 0 && j < n; --i, ++j)
+            if (nQueens[i][j] == 'Q')
+                return false;
+        return true;
+    }
+};
+
+*/
 class Solution {
 public:
     vector<vector<string>> ans;
@@ -19,7 +51,6 @@ public:
         return true;
     }
     
-    
     void putQueen(int queenCnt, int x, int totalQ, vector<string> &v, bool isVisitedY[])
     {
         if(queenCnt == totalQ){
@@ -28,16 +59,14 @@ public:
         }
         if(x >= totalQ)return;
         
-        for(; x < totalQ; x++){
-            for(int y = 0; y < totalQ; y++){
+        for(int y = 0; y < totalQ; y++){
 
-                if((isVisitedY[y] == 0)&&(isPossible(x,y,v))){
-                    v[x][y] = 'Q';
-                    isVisitedY[y] = 1;
-                    putQueen(queenCnt+1,x+1,totalQ, v, isVisitedY);
-                    v[x][y] = '.';
-                    isVisitedY[y] = 0;
-                }
+            if((isVisitedY[y] == 0)&&(isPossible(x,y,v))){
+                v[x][y] = 'Q';
+                isVisitedY[y] = 1;
+                putQueen(queenCnt+1,x+1,totalQ, v, isVisitedY);
+                v[x][y] = '.';
+                isVisitedY[y] = 0;
             }
         }
         
@@ -45,8 +74,7 @@ public:
     }
     
     vector<vector<string>> solveNQueens(int n) {
-        string s(n,'.');
-        vector<string> v(n,s);
+        vector<string> v(n,string (n,'.'));
 
         bool visited[9] = {0,};
         putQueen(0,0,n,v, visited);
