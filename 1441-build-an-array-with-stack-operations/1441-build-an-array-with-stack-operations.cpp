@@ -6,9 +6,7 @@ public:
         
         for(int i = 1; i <= n;i++){
             ans.push_back("Push");
-            if(target[idx] != i){
-                ans.push_back("Pop");
-            }
+            if(target[idx] != i) ans.push_back("Pop");
             else idx++;
             if(idx >= target.size())break;
         }
