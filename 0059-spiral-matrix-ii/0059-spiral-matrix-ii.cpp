@@ -9,14 +9,13 @@ public:
         
         x += dx[d];
         y += dy[d];
-        //cout<< x << " "<<y<<endl;
         return;
     }
     
     vector<vector<int>> generateMatrix(int n) {
         vector<vector<int>> board(n,vector<int>(n,0));
         
-        int x = 0, y = 0, d = 0, cw = 0, dw = n, ch = 0, dh = n-1;
+        int x = 0, y = 0, d = 0;
         
         for(int i = 1; i <= n*n; i++){
             board[x][y] = i;
