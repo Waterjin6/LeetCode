@@ -6,12 +6,6 @@ public:
         
         if(calc > t)return false;
         if((dx + dy == 0)&&(t == 1))return false;
-        /*cout<< "fast : "<<fast <<", dx : "<<dx <<", dy : "<<dy<<endl;
-        cout<<endl;
-        for(int calc = fast + dx-fast + dy - fast; (fast >= 0)&&(calc <= t); calc = (--fast) + dx-fast + dy - fast ){
-            cout<<"fast : "<<fast<<" calc : "<<calc<<endl;
-            if(calc == t)return true;
-        }*/
         
         return true;
     }
