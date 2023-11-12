@@ -4,8 +4,8 @@ public:
     queue<int> out;
     
     MyStack() {
-        queue<int> in = this->in;
-        queue<int> out = this->out;
+        //queue<int> in = this->in;
+        //queue<int> out = this->out;
     }
     
     void push(int x) {
