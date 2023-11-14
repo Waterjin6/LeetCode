@@ -5,7 +5,7 @@ public:
         while(n > 1){
             bool f = false;
             for(int i = 0; i < 3; i++){
-                if(n % p[i] == 0){
+                while(n % p[i] == 0){
                     n/= p[i];
                     f = true;
                 }
