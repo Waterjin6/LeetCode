@@ -3,14 +3,14 @@ public:
     vector<vector<int>> ans;
     
     void getAns(int idx, vector<int>& unique, unordered_map<int,int> &cnt, vector<int> v){
-        //cout<< idx<<" "<< v.size()<<endl;
+
         if(idx == unique.size()){
             if(find(ans.begin(),ans.end(),v) == ans.end())ans.push_back(v);
             return;
         }
         
         getAns(idx+1, unique, cnt, v);
-        //cout<< unique[idx]<<" "<<cnt[idx]<<endl;
+
         for(int i = 1; i <= cnt[unique[idx]]; i++){
             v.push_back(unique[idx]);
             getAns(idx+1, unique, cnt, v);
