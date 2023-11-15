@@ -10,9 +10,8 @@ public:
             else i++;
         }
         
-        for(int i = 0; i < cnt; i++){
-            nums.push_back(0);
-        }
+        for(int i = 0; i < cnt; i++)nums.push_back(0);
+    
         return;
     }
 };
