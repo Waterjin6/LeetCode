@@ -3,7 +3,6 @@ public:
     int can[1001][1001] = {{-1,}};
     
     int getAns(string &s, string &t, int si, int ti){
-        //cout<< si <<" "<<ti<<endl;
         int sum = 0;
         if(ti == t.length()){
             can[si][ti] = 1;
