@@ -1,34 +1,38 @@
 class Solution {
 public:
-    int can[1001][1001] = {{-1,}};
+    int solve(string &s,int i,int j,string &t,vector<vector<int>>&dp)
+{
+    if(j==t.size()-1)return 1;
+    if(i>=s.size())return 0;
+
+    if(dp[i][j]!=-1)return dp[i][j];
     
-    int getAns(string &s, string &t, int si, int ti){
-        int sum = 0;
-        if(ti == t.length()){
-            can[si][ti] = 1;
-            return 1;
-        }
-        if(si == s.length()){
-            can[si][ti] = 0;
-            return 0;
-        }
-        if(can[si][ti] != -1) return can[si][ti];
-        
-        for(int i = si; i < s.length(); i++){
-            if(s[i] == t[ti])sum += getAns(s,t,i+1, ti+1);
-        }
-        can[si][ti] = sum;
-        
-        return sum;
-    }
-    
-    int numDistinct(string s, string t) {
-        for(int i = 0; i < s.length(); i++){
-            for(int k = 0; k < t.length(); k++){
-                can[i][k] = -1;
+    int ans=0;
+    if(s[i]==t[j])
+    {
+        for(int z=i+1;z<s.size();z++)
+        {
+            if(t[j+1]==s[z]&&s.size()-z>=t.size()-j-1)
+            {
+                ans+=solve(s,z,j+1,t,dp);
             }
+            
         }
-        int ans = getAns(s,t, 0,0);
-        return ans;    
     }
+    return dp[i][j]=ans;
+}
+
+int numDistinct(string s, string t) {
+    
+    int ans=0;
+    vector<vector<int>>dp(s.size(),vector<int>(t.size(),-1));
+
+    for(int z=0;z<s.size();z++)
+    {
+        if(s[z]==t[0]&&s.size()-z>=t.size())
+            ans+=solve(s,z,0,t,dp);
+    }
+    return ans;
+}
+
 };
