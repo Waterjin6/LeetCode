@@ -37,24 +37,16 @@ public:
                 
                 if(n->left){
                     q.push(n->left);
-                    //v.push_back(n->left);
                     ch++;
                 }
                 if(n->right){
                     q.push(n->right);
-                    //v.push_back(n->right);
                     ch++;
                 }
             }
             
-            for(int i = 0; i < v.size()-1; i++){
-                (v[i])->next = v[i+1];
-            }
-            /*for(int i = 0; i< v.size(); i++){
-                cout<<v[i]->val<<" ";
-            }
-            cout<<endl;
-            cout<< child<<endl;*/
+            for(int i = 0; i < v.size()-1; i++)(v[i])->next = v[i+1];
+
             child = ch;
         }
         return root;
