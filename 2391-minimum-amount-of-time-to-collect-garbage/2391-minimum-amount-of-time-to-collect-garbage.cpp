@@ -16,12 +16,8 @@ public:
                     }
                     else t++;
                 }
-                if(r > 0 && f == true) {
-                    ans += travel[r-1];
-                    //cout<< "add "<< travel[r-1]<<endl;
-                }
+                if(r > 0 && f == true) ans += travel[r-1];
             }
-            cout<< ans<<endl;
         }
         return ans;
     }
