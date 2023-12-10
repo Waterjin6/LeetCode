@@ -28,11 +28,10 @@ public:
             }
             else{
                 b->next = n;
-                if(a != NULL)n->next = a;
+                n->next = a;
             }
             head = head->next;
-            /*for(ListNode* g = h; g != NULL; g = g->next)cout<<g->val << " ";
-        cout<<endl;*/
+
         }
         return h;
     }
