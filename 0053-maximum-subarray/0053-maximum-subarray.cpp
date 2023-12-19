@@ -8,7 +8,6 @@ public:
             if(currS+nums[i] < currS)currS = max(0,currS+nums[i]);
             else{
                 currS += nums[i];
-                //cout<<"curr Sum : "<<currS<<endl;
                 if(maxSum < currS)maxSum = currS;
             }
         }
