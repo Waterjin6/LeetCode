@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canVisitAllRooms(vector<vector<int>>& rooms) {
-        vector<bool> isVisited(rooms.size(), false);
+        unordered_set<int> isVisited = {0};
         
         stack<int> st;
         st.push(0);
@@ -9,18 +9,17 @@ public:
         while(!st.empty()){
             int idx = st.top();
             st.pop();
-            isVisited[idx] = true;
             
             for(int i = 0; i < rooms[idx].size(); i++){
-                if(isVisited[rooms[idx][i]] == false){
+                if(isVisited.count(rooms[idx][i]) == 0){
+                    isVisited.insert(rooms[idx][i]);
                     st.push(rooms[idx][i]);
+                    if(rooms.size() == isVisited.size())return true;
                 }
             }
         }
-        for(int i = 0; i < rooms.size(); i++){
-            if(isVisited[i] == false)return false;
-        }
-        return true;
+
+        return rooms.size() == isVisited.size();
         
     }
 };
