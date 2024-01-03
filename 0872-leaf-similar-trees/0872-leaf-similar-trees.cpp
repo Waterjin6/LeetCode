@@ -23,7 +23,6 @@ public:
             t = st.top();
             st.pop();
             if(t->left == NULL && t->right == NULL) {
-                cout<<t->val<<endl;
                 ans.push_back(t->val);
             }
             if(t->right) st.push(t->right);
@@ -39,7 +38,6 @@ public:
         if(r1.size() != r2.size())return false;
         
         for(int i = 0; i < r1.size(); i++){
-            //cout<< r1[i]<<" "<<r2[i]<<endl;
             if(r1[i] != r2[i])return false;
         }
         return true;
