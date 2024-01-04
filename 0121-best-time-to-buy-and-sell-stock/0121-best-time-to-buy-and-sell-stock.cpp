@@ -17,6 +17,6 @@ public:
             //cout<< b<< " "<< s<<endl;
         }
         
-        return max(ans, s-b);
+        return ans;
     }
 };
