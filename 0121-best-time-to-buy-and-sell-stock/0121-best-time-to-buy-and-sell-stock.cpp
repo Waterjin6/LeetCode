@@ -10,10 +10,7 @@ public:
                 b = prices[i];
                 s = prices[i];
             }
-            else if(s < prices[i]){
-                s = prices[i];
-                //ans = max(ans, s-b);
-            }
+            if(s < prices[i]) s = prices[i];
         }
         
         return max(ans, s-b);
