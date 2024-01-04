@@ -12,7 +12,7 @@ public:
             }
             //if(b == ns)break;
 
-            cout<<"sum : "<<sum<< " "<< b <<" "<< f <<endl;
+            //cout<<"sum : "<<sum<< " "<< b <<" "<< f <<endl;
             if(sum >= target)ans = min(ans, b-f+1);
 
             sum -= nums[f];
