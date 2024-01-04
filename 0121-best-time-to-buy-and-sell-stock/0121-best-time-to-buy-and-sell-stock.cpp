@@ -12,11 +12,10 @@ public:
             }
             else if(s < prices[i]){
                 s = prices[i];
-                ans = max(ans, s-b);
+                //ans = max(ans, s-b);
             }
-            //cout<< b<< " "<< s<<endl;
         }
         
-        return ans;
+        return max(ans, s-b);
     }
 };
