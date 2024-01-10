@@ -7,7 +7,7 @@ public:
         while(st <= ed){
             sh = 0;
             m = (st+ed)/2;
-            for(int i = 0; i < ps&& sh <= h; i++){
+            for(int i = 0; i < ps && sh <= h; i++){
                 sh += piles[i]/m;
                 if(piles[i] % m > 0)sh++;
             }
