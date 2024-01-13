@@ -7,10 +7,7 @@ public:
         
         for(int i = 1; i <= sl; i++){
             for(int j = i+1; j <= sl+1; j++){
-                if(dp[i-1]){
-                    //cout<< s.substr(i-1, j-i)<<endl;
-                    if(find(wordDict.begin(),wordDict.end(), s.substr(i-1, j-i)) != wordDict.end())dp[j-1] = true;
-                }
+                if(dp[i-1] && find(wordDict.begin(),wordDict.end(), s.substr(i-1, j-i)) != wordDict.end())dp[j-1] = true;
             }
         }
         return dp[sl];
