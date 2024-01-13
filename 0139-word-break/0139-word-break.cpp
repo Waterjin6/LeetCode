@@ -8,7 +8,7 @@ public:
         for(int i = 0; i < sl; i++){
             for(int j = i+1; j <= sl; j++){
                 if(dp[i]){
-                    cout<< s.substr(i, j-i)<<endl;
+                    //cout<< s.substr(i, j-i)<<endl;
                     if(find(wordDict.begin(),wordDict.end(), s.substr(i, j-i)) != wordDict.end())dp[j] = true;
                 }
             }
