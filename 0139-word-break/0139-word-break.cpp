@@ -2,14 +2,15 @@ class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
         int sl = s.length();
-        vector<bool> dp(sl, false);
-        dp[0] =true;
+        vector<bool> dp (sl+1, 0);
         
-        for(int i = 0; i < sl; i++){
-            for(int j = i+1; j <= sl; j++){
-                if(dp[i]){
-                    //cout<< s.substr(i, j-i)<<endl;
-                    if(find(wordDict.begin(),wordDict.end(), s.substr(i, j-i)) != wordDict.end())dp[j] = true;
+        dp[0] = true;
+        
+        for(int i = 1; i <= sl; i++){
+            for(int t = i-1; t >= 0; t--){
+                if(dp[t] && find(wordDict.begin(), wordDict.end(),s.substr(t, i-t)) != wordDict.end()){
+                    dp[i] = true;
+                    break;
                 }
             }
         }
