@@ -5,9 +5,12 @@ public:
         vector<bool> dp(sl, false);
         dp[0] =true;
         
-        for(int i = 1; i <= sl; i++){
-            for(int j = i+1; j <= sl+1; j++){
-                if(dp[i-1] && find(wordDict.begin(),wordDict.end(), s.substr(i-1, j-i)) != wordDict.end())dp[j-1] = true;
+        for(int i = 0; i < sl; i++){
+            for(int j = i+1; j <= sl; j++){
+                if(dp[i]){
+                    cout<< s.substr(i, j-i)<<endl;
+                    if(find(wordDict.begin(),wordDict.end(), s.substr(i, j-i)) != wordDict.end())dp[j] = true;
+                }
             }
         }
         return dp[sl];
