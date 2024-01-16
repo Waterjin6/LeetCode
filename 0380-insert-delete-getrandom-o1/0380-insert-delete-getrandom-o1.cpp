@@ -21,9 +21,6 @@ public:
     int getRandom() {
         auto iter = s.begin();
         int r = rand()%s.size();
-        //int a = 0;
-       // cout<< a<<" "<<r<<endl;
-        //iter += r*sizeof(int);
         for(int i = 0; i < r; i++)iter++;
 
         return (*iter);
