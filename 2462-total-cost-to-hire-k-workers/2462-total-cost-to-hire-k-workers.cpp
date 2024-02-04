@@ -13,21 +13,18 @@ public:
         }
         
         while(k-- > 0){
-            //cout<< k <<" : ";
             while(!front.empty() && hired[front.top().second]) front.pop();
             while(!back.empty() && hired[back.top().second]) back.pop();
             
             while(front.size() < candidates && f < cs && hired[f] == false)front.push({costs[f],f++});
             while(back.size() < candidates && b >= 0 && hired[b] == false)back.push({costs[b],b--});
-            if(k == 2)cout<< front.size()<<" "<< back.size()<<endl;
+            
             if(front.size() == 0 || back.top().first < front.top().first){
-                //cout<< back.top().first<<endl;
                 ans += back.top().first;
                 hired[back.top().second] = true;
                 back.pop();
             }
             else{
-                //cout<< front.top().first<<endl;
                 ans += front.top().first;
                 hired[front.top().second] = true;
                 front.pop();
