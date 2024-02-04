@@ -12,36 +12,30 @@
 class Solution {
 public:
     int ans = 0;
+    
     void getSum(TreeNode* root, long sum){
         if(sum == root->val)ans++;
         
-        if(root->left) {
-            getSum(root->left, sum-root->val);
-        }
-        if(root->right){
-            getSum(root->right, sum-root->val);
-        }
+        if(root->left) getSum(root->left, sum-root->val);
+        if(root->right) getSum(root->right, sum-root->val);
+        
         return;
     }
     
     void getAns(TreeNode* root, int sum){
-        //cout<< root->val <<" "<<sum<<endl;
-        if(sum == root->val) {
-            //cout<< "ans : "<<root->val << " "<<sum<<endl;
-            ans++;
-        }
+        if(sum == root->val) ans++;
+        
         if(root->left) {
-            //cout<<"LEFT"<<endl;
             getSum(root->left, sum-root->val);
             getAns(root->left, sum);
         }
         if(root->right){
-            //cout<< "Right"<<endl;
             getSum(root->right, sum-root->val);
             getAns(root->right, sum);
         }
         return;
     }
+    
     int pathSum(TreeNode* root, int targetSum) {
         if(root) getAns(root, targetSum);
         return ans;
