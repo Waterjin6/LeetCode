@@ -10,8 +10,6 @@ public:
             currMin = min(nums[i], currMin+nums[i]);
             finMin = min(finMin, currMin);
         }
-        //cout<< "currSum : "<< currSum<<", currMax : "<< currMax <<" , finMax : "<< finMax<<endl;
-        //cout<< "currMin : "<< currMin <<" , finMin : "<< finMin<<endl;
         
         return (currSum == finMin) ? finMax : max(finMax, currSum - finMin);
     }
