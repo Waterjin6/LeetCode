@@ -33,7 +33,7 @@ public:
             updateAns(r->right);
             rd = getDepth(r->right);
         }
-        //cout<<ld <<" "<<rd<<endl;
+
         ans = max(ans, ld+rd);
         return;
     }
