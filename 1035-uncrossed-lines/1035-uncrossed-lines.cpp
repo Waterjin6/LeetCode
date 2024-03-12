@@ -7,8 +7,7 @@ public:
         
         for(int i = 0; i < s1; i++){
             for(int t = 0; t < s2; t++){
-                if(nums1[i] == nums2[t]) dp[i+1][t+1] = 1 + dp[i][t];
-                else dp[i+1][t+1] = max(dp[i][t+1], dp[i+1][t]);
+                dp[i+1][t+1] = (nums1[i] == nums2[t]) ? dp[i+1][t+1] = 1 + dp[i][t] : max(dp[i][t+1], dp[i+1][t]);
             }
         }
         
