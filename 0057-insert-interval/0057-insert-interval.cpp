@@ -3,18 +3,14 @@ public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         int is = intervals.size();
         
-        /*if(is == 0){
-            intervals.push_back(newInterval);
-            return intervals;
-        }*/
-        
         int s = 0, e = is-1;
+
         while(s <= e && intervals[s][1] < newInterval[0])s++;
         if(s >= is){
             intervals.push_back(newInterval);
             return intervals;
         }
-         //cout<< s <<" "<<e<<endl;
+
         while(s <= e && intervals[e][0] > newInterval[1])e--;
         if(e < 0){
             intervals.insert(intervals.begin(), newInterval);
