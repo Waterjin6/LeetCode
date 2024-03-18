@@ -8,10 +8,6 @@ public:
 
         sort(points.begin(), points.end(), cmp);
         
-        /*for(int i = 0; i < points.size(); i++){
-            cout<< points[i][0]<<" "<<points[i][1]<<endl;
-        }*/
-        
         for(int i = 0; i < points.size(); i++){
             if(points[idx][1] < points[i][0] ){
                 ans++;
