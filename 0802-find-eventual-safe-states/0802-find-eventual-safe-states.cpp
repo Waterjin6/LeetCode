@@ -9,14 +9,15 @@ public:
         queue<int> q;
         
         for(int i = 0; i < sz; i++){
-            if(graph[i].size() == 0){
+            outCnt[i] = graph[i].size();
+            if(outCnt[i] == 0){
                 q.push(i);
                 ans.push_back(i);
-                continue;
             }
-            for(int t = 0; t < graph[i].size(); t++){
-                outCnt[i]++;
-                arrive_start[graph[i][t]].push_back(i);
+            else{
+                for(int t = 0; t < outCnt[i]; t++){
+                    arrive_start[graph[i][t]].push_back(i);
+                }
             }
         }
 
