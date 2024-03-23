@@ -15,17 +15,14 @@ public:
         for(ListNode* p = head->next; p != NULL; p = p->next)v.push_back(p);
         
         int s = 0, e= v.size()-1;
-        //head->next = NULL;
         ListNode* l = head;
         
         while(s < e){
-            //cout<< e<<" "<<s<<endl;
             l->next = v[e--];
             l = l->next;
-            //cout<< l->val<<endl;
+
             l->next = v[s++];
             l = l->next;
-            //cout<< l->val<<endl;
         }
 
         if(s == e){
@@ -33,7 +30,7 @@ public:
             l = l->next;
         }
         l->next = NULL;
-        //cout<< s<<" "<<e<<endl;
+        
         return;
     }
 };
