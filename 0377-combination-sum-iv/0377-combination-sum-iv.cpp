@@ -6,17 +6,9 @@ public:
         
         for(int x = 1; x <= target; x++){
             for(int t: nums){
-                if(x-t >= 0){
-                    //if(ans[nums[x]]+ans[nums[x]-t] >= INT_MAX)continue;
-                    ans[x] += ans[x-t];
-                }
+                if(x-t >= 0) ans[x] += ans[x-t];
             }
         }
-        /*for(int x : nums){
-            for(int t = x; t <= target; t++){
-                ans[t] += 1+ans[t-x];
-            }
-        }*/
         
         return ans[target];
     }
