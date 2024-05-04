@@ -24,8 +24,8 @@ public:
                 ed--;
             }
             else {
-                ans++;
-                st++;
+                ans+= ed-st+1;
+                break;
             }
         }
         return ans;
