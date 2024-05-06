@@ -12,7 +12,6 @@ class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
         deque<int> dq;
-        int sz, x;
         
         for(ListNode* p = head; p != NULL; p=p->next){
             while(!dq.empty() && dq.back() < p->val)dq.pop_back();
