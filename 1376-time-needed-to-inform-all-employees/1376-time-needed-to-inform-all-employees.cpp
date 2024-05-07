@@ -3,7 +3,7 @@ public:
     int numOfMinutes(int n, int headID, vector<int>& manager, vector<int>& informTime) {
         vector<vector<int>> under(n);
         
-        int ans = 0, xIdx,xSum, add, qs;
+        int ans = 0, xIdx,xSum;
         queue<pair<int,int>> q;
         
         for(int i = 0; i < n; i++) if(manager[i] > -1) under[manager[i]].push_back(i);
