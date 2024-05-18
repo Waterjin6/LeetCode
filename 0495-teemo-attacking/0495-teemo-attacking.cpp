@@ -4,12 +4,8 @@ public:
         int ans = duration, sz = timeSeries.size(), lastPoizoned = timeSeries[0]+duration-1;
         
         for(int i = 1; i < sz; i++){
-            if(lastPoizoned >= timeSeries[i]){
-                ans += timeSeries[i]+duration-1 -lastPoizoned;
-                lastPoizoned = timeSeries[i] + duration -1;
-                continue;
-            }
-            ans += duration;
+            if(lastPoizoned >= timeSeries[i])ans += timeSeries[i]+duration-1 -lastPoizoned;
+            else ans += duration;
             lastPoizoned = timeSeries[i] + duration -1;
         }
         
