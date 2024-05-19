@@ -2,15 +2,9 @@ class Solution {
 public:
 
     void updateMap(int &z, int &o,int &m, int &n, vector<vector<int>> &map){
-        vector<vector<int>> nMap(m+1, vector<int>(n+1, 0));
         queue<tuple<int,int,int>> q;
         int x, y, v;
         
-        /*for(int i = 0; i <= m; i++){
-            for(int t = 0; t <= n; t++){
-                if(map[i][t] > 0 && z+i <= m && o+t <= n) nMap[z+i][o+t] = map[i][t]+1;
-            }
-        }*/
         for(int i = 0; i <= m; i++){
             for(int t = 0; t <= n; t++){
                 if(map[i][t] > 0 && z+i <= m && o+t <= n) q.push({z+i, o+t, map[i][t]+1});
@@ -24,11 +18,6 @@ public:
             map[x][y] = max(map[x][y], v);
         }
 
-        /*for(int i = 0; i <= m; i++){
-            for(int t = 0; t <= n; t++){
-                if(nMap[i][t] > 0) map[i][t] = max(map[i][t],nMap[i][t]);
-            }
-        }*/
         map[z][o] = max(map[z][o], 1);
         return;
     }
