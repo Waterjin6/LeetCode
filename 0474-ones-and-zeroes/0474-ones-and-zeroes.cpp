@@ -5,6 +5,7 @@ public:
         queue<tuple<int,int,int>> q;
         int x, y, v;
         
+        q.push({z,o, 1});
         for(int i = 0; i <= m; i++){
             for(int t = 0; t <= n; t++){
                 if(map[i][t] > 0 && z+i <= m && o+t <= n) q.push({z+i, o+t, map[i][t]+1});
@@ -18,7 +19,6 @@ public:
             map[x][y] = max(map[x][y], v);
         }
 
-        map[z][o] = max(map[z][o], 1);
         return;
     }
     
