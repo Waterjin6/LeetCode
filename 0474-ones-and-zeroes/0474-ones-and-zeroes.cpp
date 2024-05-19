@@ -1,6 +1,7 @@
 class Solution {
 public:
-
+    int ans = 0;
+    
     void updateMap(int &z, int &o,int &m, int &n, vector<vector<int>> &map){
         queue<tuple<int,int,int>> q;
         int x, y, v;
@@ -17,13 +18,14 @@ public:
             q.pop();
             
             map[x][y] = max(map[x][y], v);
+            ans = max(ans, map[x][y]);
         }
 
         return;
     }
     
     int findMaxForm(vector<string>& strs, int m, int n) {
-        int sz = strs.size(), z = 0, o = 0, ans = 0;
+        int sz = strs.size(), z = 0, o = 0;
         vector<vector<int>> map(m+1, vector<int>(n+1, 0)); 
         
         for(int i = 0; i < sz; i++){ // 수 맞추기
@@ -36,11 +38,11 @@ public:
             if(z <= m && o <= n) updateMap(z,o,m,n,map);
         }
         
-        for(int i = 0; i <= m; i++){
+        /*for(int i = 0; i <= m; i++){
             for(int t = 0; t <= n; t++) {
                 ans = max(ans, map[i][t]);
             }
-        }
+        }*/
         
         return ans;
     }
