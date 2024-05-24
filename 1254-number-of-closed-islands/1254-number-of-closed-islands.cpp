@@ -3,20 +3,7 @@ public:
     int dx[4] = {-1,1,0,0};
     int dy[4] = {0,0,-1,1};
     
-    void print(int &xs, int &ys, vector<vector<int>>& grid){
-        cout<<endl;
-        cout<< "PRINT ++++++++++++++++"<<endl;
-        
-        for(int i = 0; i < xs; i++){
-            for(int t = 0; t < ys; t++)cout<<grid[i][t]<<" ";
-            cout<<endl;
-        }
-        cout<<endl;
-        return;
-    }
-    
     bool isIsland(int &x, int &y, vector<vector<int>>& grid, int &xs, int &ys){
-        //cout <<"x : "<< x<< " , y : "<<y<<endl;
         bool ans = true;
         int qx,qy,cx, cy;
         
@@ -51,10 +38,7 @@ public:
         
         for(int i = 1; i < xs-1; i++){
             for(int t = 1; t < ys-1; t++){
-                if(grid[i][t] == 0 && isIsland(i,t, grid, xs, ys)){
-                   // print(xs, ys, grid);
-                    ans++;
-                }
+                if(grid[i][t] == 0 && isIsland(i,t, grid, xs, ys)) ans++;
             }
         }
         return ans;
