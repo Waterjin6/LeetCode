@@ -1,8 +1,7 @@
 class Solution {
 public:
     int numSubseq(vector<int>& nums, int target) {
-        int sz = nums.size(), st = 0, ed = sz-1, m, b, e, mod = (int)1e9^7;
-        unsigned long long ans = 0, x;
+        int sz = nums.size(), st = 0, m, b, e, mod = (int)1e9^7, ans = 0;
         vector<int> pw(sz+1,1);
         
         for(int i = 1; i <= sz; i++) pw[i] = (2*pw[i-1])%mod;
