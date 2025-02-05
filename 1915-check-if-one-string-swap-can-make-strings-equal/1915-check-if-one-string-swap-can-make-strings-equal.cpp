@@ -6,14 +6,9 @@ public:
 
         for(int i = 0; i < s1.length(); i++){
             if(s1[i] != s2[i]){
-                if(idx == -1) {
-                    idx = i;
-                    cnt++;
-                }
-                else {
-                    if(!(s1[idx] == s2[i] && s2[idx] == s1[i]))return false;
-                    cnt++;
-                }
+                if(idx == -1) idx = i;
+                else if(!(s1[idx] == s2[i] && s2[idx] == s1[i]))return false;
+                cnt++;
             }
         }
         if(cnt == 0 || cnt == 2)return true;
