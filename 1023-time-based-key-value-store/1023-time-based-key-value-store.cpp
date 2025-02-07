@@ -14,9 +14,9 @@ public:
     }
     
     string get(string key, int timestamp) {
-        if (mapP.find(key) == mapP.end()) return "";
+        if (mapP.find(key) == mapP.end()) return ""; // 아예 값이 없음
 
-        auto it = mapP[key]->upper_bound(timestamp);
+        auto it = mapP[key]->upper_bound(timestamp); // 타임스탬프보다 큰값중에 가장 작은값
         if (it == mapP[key]->begin()) return ""; // timestamp 이하 값이 없음
         --it;
         return it->second;
