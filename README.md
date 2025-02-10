@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0275-h-index-ii](https://github.com/Waterjin6/LeetCode/tree/master/0275-h-index-ii) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
@@ -27,6 +28,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0275-h-index-ii](https://github.com/Waterjin6/LeetCode/tree/master/0275-h-index-ii) |
 | [1023-time-based-key-value-store](https://github.com/Waterjin6/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
 ## Design
