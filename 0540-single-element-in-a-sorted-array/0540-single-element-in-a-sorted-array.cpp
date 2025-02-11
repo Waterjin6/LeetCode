@@ -2,7 +2,7 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
         int s = 0, sz = nums.size(), range = sz/2, e = range-1, m=(s+e)/2;
-        if(sz == 1)return nums[0];
+        //if(sz == 1)return nums[0];
         //cout<< " m : "<<m<<" , s : "<<s<<" , e : "<< e<<endl;
 
         while(s <= e){
