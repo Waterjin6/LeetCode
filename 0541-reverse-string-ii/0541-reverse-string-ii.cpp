@@ -8,12 +8,9 @@ public:
             idx += 2*k;
         }
 
-        if(idx + k <= sz){
-            reverse(s.begin()+idx, s.begin()+idx+k);
-        }
-        else if(idx+k > sz){
-            reverse(s.begin()+idx, s.end());
-        }
+        if(idx + k <= sz) reverse(s.begin()+idx, s.begin()+idx+k);
+        else reverse(s.begin()+idx, s.end());
+
         return s;
     }
 };
