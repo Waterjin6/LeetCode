@@ -8,6 +8,7 @@
 | [0540-single-element-in-a-sorted-array](https://github.com/Waterjin6/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
+| [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
 ## Hash Table
 |  |
@@ -43,4 +44,12 @@
 |  |
 | ------- |
 | [0541-reverse-string-ii](https://github.com/Waterjin6/LeetCode/tree/master/0541-reverse-string-ii) |
+## Depth-First Search
+|  |
+| ------- |
+| [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 <!---LeetCode Topics End-->
