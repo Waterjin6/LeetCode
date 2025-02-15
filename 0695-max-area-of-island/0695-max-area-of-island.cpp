@@ -4,7 +4,6 @@ public:
 
     int getSize(int x, int y, int &xs, int &ys, vector<vector<int>>& grid){
         int ans = 1, cx, cy, qx, qy;
-        //bool isBorder = false;
 
         queue<pair<int,int>> q;
         q.push({x,y});
@@ -14,8 +13,6 @@ public:
             qx = q.front().first;
             qy = q.front().second;
             q.pop();
-
-            //if(qx == 0 || qx == xs-1 || qy == 0 || qy == ys-1) isBorder = true;
 
             for(int i = 0; i < 4; i++){
                 cx = qx + dir[i][0];
@@ -28,8 +25,6 @@ public:
             }
         }
 
-
-        //if(isBorder == true) return 0;
         return ans;
     }
 
@@ -40,10 +35,7 @@ public:
 
         for(int i = 0; i < ms; i++){
             for(int t = 0; t < ns; t++){
-                if(grid[i][t] == 1) {
-                    ans = max(ans, getSize(i,t, ms, ns, grid));
-                    //cout<< "i : "<<i <<" , t : "<<t << ", ans : "<<ans<<endl;
-                }
+                if(grid[i][t] == 1) ans = max(ans, getSize(i,t, ms, ns, grid));
             }
         }
 
