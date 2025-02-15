@@ -6,6 +6,7 @@
 | ------- |
 | [0275-h-index-ii](https://github.com/Waterjin6/LeetCode/tree/master/0275-h-index-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Waterjin6/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
@@ -48,14 +49,21 @@
 ## Depth-First Search
 |  |
 | ------- |
+| [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 ## Matrix
 |  |
 | ------- |
+| [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+## Union Find
+|  |
+| ------- |
+| [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 <!---LeetCode Topics End-->
