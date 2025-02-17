@@ -45,9 +45,9 @@ public:
         /*for(int i = 0; i < sz; i++){
             if(tag[i] == -1 && graph[i].size() > 0)return false;
         }*/
-        for(int i = 0; i < sz; i++){
+        /*for(int i = 0; i < sz; i++){
             if(tag[i] == -1&& graph[i].size() > 0)return false;
-        }
+        }*/
         return true;
     }
 };
