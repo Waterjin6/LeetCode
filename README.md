@@ -52,12 +52,14 @@
 | ------- |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
+| [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
+| [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 ## Matrix
@@ -70,4 +72,9 @@
 |  |
 | ------- |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
+| [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
+## Graph
+|  |
+| ------- |
+| [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
 <!---LeetCode Topics End-->
