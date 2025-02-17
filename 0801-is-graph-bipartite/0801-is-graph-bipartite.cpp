@@ -3,7 +3,6 @@ public:
     bool isBipartite(vector<vector<int>>& graph) {
         int sz = graph.size();
 
-        vector<int> v;
         queue<int> q;
         vector<int> tag(sz, -1);
 
