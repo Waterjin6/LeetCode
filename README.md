@@ -7,6 +7,7 @@
 | [0275-h-index-ii](https://github.com/Waterjin6/LeetCode/tree/master/0275-h-index-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Waterjin6/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
@@ -77,4 +78,16 @@
 |  |
 | ------- |
 | [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+## Greedy
+|  |
+| ------- |
+| [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+## Sorting
+|  |
+| ------- |
+| [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 <!---LeetCode Topics End-->
