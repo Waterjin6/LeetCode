@@ -7,6 +7,7 @@
 | [0275-h-index-ii](https://github.com/Waterjin6/LeetCode/tree/master/0275-h-index-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Waterjin6/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0542-01-matrix](https://github.com/Waterjin6/LeetCode/tree/master/0542-01-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
@@ -59,6 +60,7 @@
 |  |
 | ------- |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0542-01-matrix](https://github.com/Waterjin6/LeetCode/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [0801-is-graph-bipartite](https://github.com/Waterjin6/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
@@ -67,6 +69,7 @@
 |  |
 | ------- |
 | [0417-pacific-atlantic-water-flow](https://github.com/Waterjin6/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0542-01-matrix](https://github.com/Waterjin6/LeetCode/tree/master/0542-01-matrix) |
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 ## Union Find
@@ -81,6 +84,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0542-01-matrix](https://github.com/Waterjin6/LeetCode/tree/master/0542-01-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 ## Greedy
 |  |
