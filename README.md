@@ -12,6 +12,7 @@
 | [0695-max-area-of-island](https://github.com/Waterjin6/LeetCode/tree/master/0695-max-area-of-island) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Waterjin6/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/Waterjin6/LeetCode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
@@ -20,6 +21,7 @@
 | ------- |
 | [1023-time-based-key-value-store](https://github.com/Waterjin6/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1249-snapshot-array](https://github.com/Waterjin6/LeetCode/tree/master/1249-snapshot-array) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/Waterjin6/LeetCode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/Waterjin6/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 ## String
@@ -86,6 +88,7 @@
 | ------- |
 | [0542-01-matrix](https://github.com/Waterjin6/LeetCode/tree/master/0542-01-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/Waterjin6/LeetCode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 ## Greedy
 |  |
 | ------- |
