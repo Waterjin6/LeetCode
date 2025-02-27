@@ -93,8 +93,14 @@
 |  |
 | ------- |
 | [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/Waterjin6/LeetCode/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 ## Sorting
 |  |
 | ------- |
 | [0646-maximum-length-of-pair-chain](https://github.com/Waterjin6/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/Waterjin6/LeetCode/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+## Math
+|  |
+| ------- |
+| [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/Waterjin6/LeetCode/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 <!---LeetCode Topics End-->
