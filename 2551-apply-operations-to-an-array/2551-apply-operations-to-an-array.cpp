@@ -2,9 +2,6 @@ class Solution {
 public:
     vector<int> applyOperations(vector<int>& nums) {
         int sz = nums.size();
-        //vector<int> ans(sz, -1);
-
-        //ans[sz-1] = nums[sz-1];
 
         // multiply
         for(int i = 0; i < sz-1; i++){
