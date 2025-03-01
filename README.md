@@ -16,6 +16,7 @@
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
+| [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -51,6 +52,7 @@
 |  |
 | ------- |
 | [0541-reverse-string-ii](https://github.com/Waterjin6/LeetCode/tree/master/0541-reverse-string-ii) |
+| [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -103,4 +105,8 @@
 |  |
 | ------- |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/Waterjin6/LeetCode/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
+## Simulation
+|  |
+| ------- |
+| [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 <!---LeetCode Topics End-->
