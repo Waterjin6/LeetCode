@@ -17,6 +17,7 @@
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Waterjin6/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Hash Table
 |  |
 | ------- |
@@ -25,6 +26,7 @@
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/Waterjin6/LeetCode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/Waterjin6/LeetCode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Waterjin6/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## String
 |  |
 | ------- |
@@ -53,6 +55,7 @@
 | ------- |
 | [0541-reverse-string-ii](https://github.com/Waterjin6/LeetCode/tree/master/0541-reverse-string-ii) |
 | [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Waterjin6/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Depth-First Search
 |  |
 | ------- |
