@@ -16,6 +16,7 @@
 | [1364-tuple-with-same-product](https://github.com/Waterjin6/LeetCode/tree/master/1364-tuple-with-same-product) |
 | [1428-jump-game-iii](https://github.com/Waterjin6/LeetCode/tree/master/1428-jump-game-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/Waterjin6/LeetCode/tree/master/1927-maximum-ascending-subarray-sum) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/Waterjin6/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Waterjin6/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Hash Table
@@ -54,6 +55,7 @@
 |  |
 | ------- |
 | [0541-reverse-string-ii](https://github.com/Waterjin6/LeetCode/tree/master/0541-reverse-string-ii) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/Waterjin6/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Waterjin6/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Depth-First Search
@@ -111,5 +113,6 @@
 ## Simulation
 |  |
 | ------- |
+| [2265-partition-array-according-to-given-pivot](https://github.com/Waterjin6/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/Waterjin6/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 <!---LeetCode Topics End-->
