@@ -109,6 +109,7 @@
 ## Math
 |  |
 | ------- |
+| [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/Waterjin6/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2264-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/Waterjin6/LeetCode/tree/master/2264-minimum-sum-of-four-digit-number-after-splitting-digits) |
 ## Simulation
 |  |
